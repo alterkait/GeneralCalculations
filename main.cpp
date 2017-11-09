@@ -71,13 +71,39 @@ void Arithmetics()
   if (op == "+")
   {
     float ans;
-    ans = n1 + n2;
-    cout << n1 << "+" << n2 << " = " << ans << endl; 
+      ans = n1 + n2;
+        cout << n1 << "+" << n2 << " = " << ans << endl; 
   }
   
   if (op == "-")
   {
     float ans;
+      ans = n1 - n2;
+        cout << n1 << " - " << n2 << " = " << ans << endl;
   }
+  
+  if (op == "*")
+  {
+    float ans;
+      ans = n1 * n2;
+        cout << n1 << " x " << n2 << " = " << ans << endl;
+  }
+  
+  if (op == "/")
+  {
+    float ans;
+      ans = n1 / n2;
+        cout << n1 << " / " << n2 << " = " << ans << endl;
+  }
+  
+  main();
 }
+
+void Circle()
+{
+  
+}
+
+
+
 
