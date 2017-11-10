@@ -15,42 +15,45 @@ void Coordinate();
 
 int main()
 {
-  system("cls")
-  system("color 0F")
+  system("cls");
+  system("color 0F");
+
   int choice;
-  
+
   cout << "1. Simple Arithmetic Calculations (+, -, *, /)" << endl;
   cout << "2. Circle Geometry" << endl;
   cout << "3. Triangle Geometry" << endl;
   cout << "4. Simple Interest Calculator" << endl;
   cout << "5. Compound Interest Calculator" << endl;
   cout << "6. Coordinate Geometry" << endl;
-  
+
   cin >> choice;
-  
+
+  system("cls");
+
   switch(choice)
   {
     case 1:
       Arithmetics();
-      break();
+      break;
     case 2:
       Circle();
-      break();
+      break;
     case 3:
       Triangle();
-      break();
+      break;
     case 4:
       SInterest();
-      break();
+      break;
     case 5:
       CInterest();
-      break();
+      break;
     case 6:
       Coordinate();
-      break();
-      
+      break;
+
       cin.get();
-      
+
   }
 }
 
@@ -58,52 +61,82 @@ void Arithmetics()
 {
   float n1, n2;
   string op;
-  
+
   cout << "Input the first Number: " << endl;
   cin >> n1;
-  
-  cout << "Input the arithmetic operation" << endl;
-  cin >> op;
-  
+
   cout << "Input the second number: " << endl;
   cin >> n2;
-  
-  if (op == "+")
+
+  cout << "Input the arithmetic operation" << endl;
+  cin >> op;
+    if (op == "+")
   {
     float ans;
       ans = n1 + n2;
-        cout << n1 << "+" << n2 << " = " << ans << endl; 
+
+        cout << n1 << "+" << n2 << " = " << ans << endl;
   }
-  
-  if (op == "-")
+
+   if (op == "-")
   {
     float ans;
       ans = n1 - n2;
         cout << n1 << " - " << n2 << " = " << ans << endl;
   }
-  
+
   if (op == "*")
   {
     float ans;
       ans = n1 * n2;
         cout << n1 << " x " << n2 << " = " << ans << endl;
   }
-  
+
   if (op == "/")
   {
     float ans;
       ans = n1 / n2;
         cout << n1 << " / " << n2 << " = " << ans << endl;
   }
-  
+
   main();
 }
 
+
 void Circle()
 {
-  
+    int choice;
+
+    cout << "1. Find the Circumfrence of the Circle" << endl;
+    cout << "2. Find the Area of the Circle" << endl;
+    cout << "3. Find the diameter of the Circle" << endl;
+    cout << "4. Find the Radius of the Circle" << endl;
 }
 
 
 
+void Triangle()
+{
 
+}
+
+
+
+void SInterest()
+{
+
+}
+
+
+
+void CInterest()
+{
+
+}
+
+
+
+void Coordinate()
+{
+
+}
