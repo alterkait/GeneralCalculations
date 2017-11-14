@@ -61,7 +61,7 @@ void Arithmetics()
 {
   string op;
 
-  cout << "Enter the Arithmetic Operation you would like to use (+, -, *, /) << endl;
+  cout << "Enter the Arithmetic Operation you would like to use (+, -, *, /)" << endl;
   cin >> op;
   
   if (op == "+")
