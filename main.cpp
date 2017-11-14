@@ -59,44 +59,74 @@ int main()
 
 void Arithmetics()
 {
-  float n1, n2;
   string op;
 
-  cout << "Input the first Number: " << endl;
-  cin >> n1;
-
-  cout << "Input the second number: " << endl;
-  cin >> n2;
-
-  cout << "Input the arithmetic operation" << endl;
+  cout << "Enter the Arithmetic Operation you would like to use (+, -, *, /) << endl;
   cin >> op;
-    if (op == "+")
+  
+  if (op == "+")
   {
-    float ans;
-      ans = n1 + n2;
-
-        cout << n1 << "+" << n2 << " = " << ans << endl;
+    float n1, n2, ansA
+    
+    cout << "Enter the first number" << endl;
+    cin >> n1;
+    
+    cout << "Enter the Second Number" << endl;
+    cin >> n2;
+    
+    ansA = n1 + n2;
+    
+    cout << n1 << " + " << n2 << " = " << ansA << endl;
+    
   }
-
-   if (op == "-")
+  
+  if (op == "-")
   {
-    float ans;
-      ans = n1 - n2;
-        cout << n1 << " - " << n2 << " = " << ans << endl;
+    float n1, n2, ansS;
+    
+    cout << "Enter the first number" << endl;
+    cin >> n1;
+    
+    cout << "Enter the Second Number" << endl;
+    cin >> n2;
+    
+    ansA = n1 - n2;
+    
+    cout << n1 << " - " << n2 << " = " << ansS << endl;
   }
-
+  
   if (op == "*")
   {
-    float ans;
-      ans = n1 * n2;
-        cout << n1 << " x " << n2 << " = " << ans << endl;
+    float n1, n2, ansM;
+    cout << "Enter the first number" << endl;
+    cin >> n1;
+    
+    cout << "Enter the Second Number" << endl;
+    cin >> n2;
+    
+    ansA = n1 * n2;
+    
+    cout << n1 << " x " << n2 << " = " << ansM << endl;
   }
-
+  
   if (op == "/")
   {
-    float ans;
-      ans = n1 / n2;
-        cout << n1 << " / " << n2 << " = " << ans << endl;
+    float n1, n2, ansM;
+    
+    cout << "Enter the first number" << endl;
+    cin >> n1;
+    
+    cout << "Enter the Second Number" << endl;
+    cin >> n2;
+    
+    ansA = n1 / n2;
+    
+    cout << n1 << " divided by " << n2 << " = " << ansM << endl;
+  }
+  
+  else
+  {
+    cout << "Please Enter appropiate characters" << endl;
   }
 
   main();
