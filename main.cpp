@@ -135,20 +135,77 @@ void Arithmetics()
 
 void Circle()
 {
+  void CircleCircumfrence();
+  void CircleArea();
+  void CircleDiameter();
+  
     int choice;
 
     cout << "1. Find the Circumfrence of the Circle" << endl;
     cout << "2. Find the Area of the Circle" << endl;
     cout << "3. Find the diameter of the Circle" << endl;
-    cout << "4. Find the Radius of the Circle" << endl;
     cin >> choice;
     
   switch (choice)
   {
     case 1:
+      CircleCircumfrence();
+      break;
+    case 2:
+      CircleArea();
+      break;
+    case 3:
+      CircleDiameter();
+      break;
+      
+      cin.get()
       
   }
+  
+  void CircleCircumfrence()
+  {
+    /* C = 2piR */
+    
+    float radius, pi, C;
+    pi = 3.14159265;
+    
+    cout << "What is the radius of the Circle?" << endl;
+    cin >> radius;
+    
+    C = 2 * pi * radius;
+    
+    cout << "Circumfrence = " << C << endl;
+  }
       
+  void CircleArea()
+  {
+    /* A = piR^2 */
+    
+    float radius, pi, A;
+    pi = 3.14159265;
+    
+    cout << "What is the radius of the Circle?" << endl;
+    cin >> radius;
+    
+    A = pi * radius ** radius;
+    
+    cout << "Area = " << A << endl;
+  }
+  
+  void CircleDiameter()
+  {
+    /* D = 2R */
+    float radius, D;
+    
+    cout << "What is the radius of the Circle?" << endl;
+    cin >> radius;
+    
+    D = 2 * radius;
+    
+    cout << "Diameter = " << D << endl;
+  }
+  
+ 
 }
 
 
