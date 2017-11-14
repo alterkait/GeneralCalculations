@@ -141,6 +141,14 @@ void Circle()
     cout << "2. Find the Area of the Circle" << endl;
     cout << "3. Find the diameter of the Circle" << endl;
     cout << "4. Find the Radius of the Circle" << endl;
+    cin >> choice;
+    
+  switch (choice)
+  {
+    case 1:
+      
+  }
+      
 }
 
 
